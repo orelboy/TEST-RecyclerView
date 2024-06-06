@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TEST RecyclerView</string>
+    <string name="plus_temperature">+</string>
+    <string name="minus_temperature">-</string>
+</resources>
