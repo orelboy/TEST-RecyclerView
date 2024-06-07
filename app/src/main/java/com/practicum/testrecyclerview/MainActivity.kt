@@ -1,7 +1,9 @@
 package com.practicum.testrecyclerview
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -22,5 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         val rvWeather = findViewById<RecyclerView>(R.id.rvWeather)
         rvWeather.adapter = weatherAdapter
+
+        val buttonGlideTest = findViewById<Button>(R.id.GlideTest)
+        buttonGlideTest.setOnClickListener {
+            val displayIntent = Intent(this, GlideTest::class.java)
+            startActivity(displayIntent)
+        }
     }
 }
